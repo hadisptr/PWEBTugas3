@@ -1,0 +1,99 @@
+/* style.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 15px;
+  animation: changeBackgroundColor 5s infinite;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: rgba(62, 167, 85, 1); /* Warna awal */
+  }
+  25% {
+    background-color: rgba(255, 0, 0, 1); /* Warna pertama */
+  }
+  50% {
+    background-color: rgba(0, 0, 255, 1); /* Warna kedua */
+  }
+  75% {
+    background-color: rgba(255, 255, 0, 1); /* Warna ketiga */
+  }
+  100% {
+    background-color: rgba(62, 167, 85, 1); /* Kembali ke warna awal */
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  color: rgb(243, 240, 240);
+}
+
+h2 {
+  color: rgb(243, 240, 240);
+}
+
+h3 {
+  color: rgb(243, 240, 240);
+}
+
+a {
+  text-decoration: none;
+  color: #5673C8;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  padding: 6px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  max-width: 25%;
+  box-sizing: border-box;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+/* window size 850 width set */
+@media screen and (max-width: 850px) {
+  .column {
+      max-width: 50%;
+  }
+}
+
+/* window size 400 width set */
+@media screen and (max-width: 400px) {
+  .column {
+      max-width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
